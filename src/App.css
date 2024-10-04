@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "inter";
+}
+body {
+  padding: 0 1rem;
+}
+
+.backgroundImage {
+  width: 100vw;
+  height: 35vh;
+  background: linear-gradient(
+      to right,
+      rgba(6, 43, 255, 0.5),
+      rgba(255, 23, 224, 0.5)
+    ),
+    url("./asset/image.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 2rem;
+}
+
+/* check box style  */
+.inputBox {
+  background-color: #2e314b;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+input[type="text"] {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  margin-top: -4px;
+}
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #74768a;
+  border-radius: 50%; /* Makes the checkbox rounded */
+  appearance: none; /* Removes the default checkbox styling */
+  -webkit-appearance: none; /* For WebKit browsers (Safari, Chrome) */
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #007bff; /* Background color when checked */
+  border-color: #007bff; /* Change border color when checked */
+}
+
+.inputBox input[type="checkbox"] {
+  pointer-events: none;
+}
+.submitBTN {
+  display: inline-block;
+  margin-left: auto;
+  cursor: pointer;
+  scale: 0.8;
+  opacity: 0.5;
+}
+.submitBTN:hover {
+  opacity: 1;
+}
+/* Tasks  */
+.taskContainer {
+  margin-top: 2.5rem;
+  background-color: #2e314b;
+  border-radius: 8px;
+  color: rgb(226, 226, 255);
+  transition: 1s;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(226, 226, 255, 0.274);
+  padding: 1rem 0rem;
+}
+
+.task span {
+  margin-left: 1rem;
+}
