@@ -107,3 +107,28 @@ input[type="checkbox"]:checked {
 .task span {
   margin-left: 1rem;
 }
+
+/* footer  */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  color: #8589b3;
+}
+.footerFilter {
+  gap: 1rem;
+  display: flex;
+}
+
+.footerFilter span {
+  cursor: pointer;
+}
+
+.active {
+  color: rgb(69, 143, 255);
+}
+
+.clear {
+  cursor: pointer;
+}
